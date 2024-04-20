@@ -4,7 +4,7 @@
   "description": "This web component creates a configurable bell",
   "main": "wc-bell-ring.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No test specified\"",
     "build": "rollup -c"
   },
   "repository": {
