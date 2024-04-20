@@ -1,0 +1,27 @@
+{
+  "name": "@annoyingmouse/wc-bell-ringing",
+  "version": "1.0.0",
+  "description": "This web component creates a configurable bell",
+  "main": "wc-bell-ring.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annoyingmouse/wc-bell-ringing.git"
+  },
+  "keywords": [
+    "web-comopnent"
+  ],
+  "author": "Dominic Myers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/annoyingmouse/wc-bell-ringing/issues"
+  },
+  "homepage": "https://github.com/annoyingmouse/wc-bell-ringing#readme",
+  "devDependencies": {
+    "rollup": "^2.36.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
