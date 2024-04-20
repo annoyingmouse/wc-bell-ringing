@@ -1,6 +1,6 @@
 {
   "name": "@annoyingmouse/wc-bell-ringing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This web component creates a configurable bell",
   "main": "wc-bell-ring.js",
   "scripts": {
