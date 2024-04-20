@@ -87,10 +87,11 @@ class WCBellRing extends HTMLElement {
 						this.noShadow
 							? ""
 							: "filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));"
-					}${
-						this.initialTimes !== 0
+					}
+					${
+						(this.initialTimes !== 0)
 							? `
-          animation-duration: ${this.getDuration};
+          animation-duration: ${this.getDuration()};
           animation-iteration-count: ${this.initialTimes};
           animation-name: bell-keyframes;
               `
@@ -102,9 +103,9 @@ class WCBellRing extends HTMLElement {
     `;
 	}
 	get initialTimes() {
-		if (this.hasAttribute("times")) {
-			const times = this.getAttribute("times");
-			return times === "infinite" ? "infinite" : Number(times);
+		if (this.hasAttribute("times") && CSS.supports("animation-iteration-count", this.getAttribute("times"))) {
+			console.log(this.getAttribute("times"));
+			return this.getAttribute("times") === "infinite" ? "infinite" : Number(this.getAttribute("times"));
 		} else {
 			return 0;
 		}
